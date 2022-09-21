@@ -12,14 +12,14 @@ Lastly, the information of the customers will be stored in the database and salo
 
 Modules Will be Implemented
 
-Home Page
-About Us
-Contact
-Packages & Services
-Appointment Booking
-Feedback
-User Review
-Payment Gateway
-Admin Dashboard
-Admin Login & Settings
-Customer's Database
+- Home Page
+- About Us
+- Contact
+- Packages & Services
+- Appointment Booking
+- Feedback
+- User Review
+- Payment Gateway
+- Admin Dashboard
+- Admin Login & Settings
+- Customer's Database
