@@ -1,87 +1,99 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Contact Us</title>
 
-<html>
-    <head>
-        <title>Contact Us</title>   
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="style1.css" rel="stylesheet" type="text/css"/>
-        <?php include 'header.html';?>
-    </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>   
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="footer.css">
+    <!--Only for demo purpose - no need to add.-->
+    <link rel="stylesheet" href="assets/demo.css" />
+	
+</head>
+<body>
+    <?php include 'header.html'?>
 
-<body>        
+<section>
+     <div class="rt-container">
+          <div class="col-rt-12">
+              <div class="Scriptcontent">
+              
+            <br /><h1>Contact Us</h1>
+            <p>- Get the Fresher Styles & Cuts For Your Needs along with any Beard Trimming Services Or Shaving.</p><hr>
+            <div class="container">
+           <div class="contact-parent">       
+            <div class="contact-child child1">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i> Address <br />
+                            <span> JALAN SUNGAI DUA, 11700 Gelugor,
+                                <br />
+                                Penang, Malaysia
+                            </span>
+                        </p>
 
-<div class="page-wrapper">
-    
-    
-<section class="contact">
-    <div class="content-contact">
-        <h2>Contact Us</h2>
-        <p>Get the Fresher Styles & Cuts For Your Needs along with any Beard Trimming Services Or Shaving</p>
-    </div>
+                        <p>
+                            <i class="fas fa-phone-alt"></i> Let's Talk <br />
+                            <span> +6016-412 1820</span>
+                        </p>
 
-    <div class="container-contact">
-        <div class="contactInfo">
-            <div class="box">
-                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                <div class="text">
-                    <h3>Address</h3>
-                    <div class="mapouter"><div class="gmap_canvas">
-                        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=200&amp;hl=en&amp;q=Studio C Hair &amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div></div>
-                            <p><a href="" style="color: white; background-color: transparent" target="_blank"><u>Jalan Sungai Dua, 11700 Gelugor, Pulau Pinang</u></a></p>
-    </div>
-            </div>
-            <div class="box">
-                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                <div class="text">
-                    <h3>Phone</h3>
-                    <p>+6016-4121820</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                <div class="text">
-                    <h3>Email</h3>
-                    <p>studioc@gmail.com</p>
+                        <p>
+                            <i class=" far fa-envelope"></i> General Support <br />
+                            <span>studiochairbeautysalon@gmail.com</span>
+                        </p>
+                    </div>
+
+                    <div class="contact-child child2">
+                        <div class="inside-contact">
+                            <h2>Contact Form</h2>
+                            <p>Fill in the form below to send us a message:</p>
+                            <form role="form" action="contact-validation.php" method="post">
+                                <div class="form-group">
+                                    <label class="sr-only" for="contact-name">Name</label>
+                                    <input type="text" name="name" placeholder="Name..." class="contact-name form-control" id="contact-name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="contact-email">Email</label>
+                                    <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="contact-subject">Subject</label>
+                                    <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="contact-message">Message</label>
+                                    <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-antispam">Anti-Spam Question: 7 + 5 = ?</label>
+                                    <input type="text" name="antispam" placeholder="Your answer..." class="contact-antispam form-control" id="contact-antispam">
+                                </div>
+                                <input type="submit" id="btn_send" value="SEND">
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="contactForm">
-            <form action="Send.php" method="post">
-                <h2>Send Message</h2>
-                <div class="inputBox">
-                    <input type="text" name="name" required="">
-                    <span>Full Name</span>
-                </div>
-                <div class="inputBox">
-                    <input type="text" name="email" required="">
-                    <span>Email</span>
-                </div>    
-                <div class="inputBox">
-                    <textarea name="msg" maxlength="220" required=""></textarea>
-                    <span>Type your Message.....</span>
-                </div>
-                <div class="inputBox">
-                    <input type="submit" name="Submit" value="Send">
-                    <?php session_start();
-                        if(isset($_SESSION['msg']) && $_SESSION['msg'] != ''){
-                        echo $_SESSION['msg'];
-                        unset($_SESSION['msg']);}
-                    ?>
-                </div>
-            </form>
-        </div>
+
+        <h1>Locate Us</h1><hr>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+            <iframe class="gmap_iframe" frameborder="2" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Studio C Hair & Beauty Salon&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+            </div>
+    		
+           
+    		</div>
+		</div>
     </div>
-   
+    
 </section>
- 
 
-</div>
-<?php include 'footer.html';?>
-    </body>
+    <?php include 'footer.html'?>
 
+	</body>
 </html>
-   
