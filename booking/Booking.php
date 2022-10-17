@@ -3,7 +3,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db = "northernvintagebarbershop";
+$db = "hairsalon";
 
 $con = new mysqli($host,$user,$pass,$db);
 if (!$con)
