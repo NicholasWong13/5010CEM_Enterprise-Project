@@ -52,6 +52,7 @@ a {
                     <div class="content">
                         <h1>Book Your Slot Now & Save your time</h1>
                         <p>Get the Fresher Styles & Cuts For Your Needs along with any Beard Trimming Services Or Shaving.</p>
+                        <h2>For Help Call: +6013-4160494</h2>
                     </div>
                 </div>
                 <div class="col-sm-5">
@@ -59,27 +60,58 @@ a {
                         <div class="form-head">
                             <h2>Book Appointment</h2>
                         </div>
-                        
-                        <div class="form-head">
-                            <h5>How to make an appointment?</h5>
-                            <ul>
-                                <li>Click on the button below</li>
-                                <li>Pick an available date provided</li>
-                                <li>Insert required information</li>
-                                <li>Submit form once everything's done</li>
-                                <li>Hold on for salon confirmation</li>
-                            </ul>  
+                        <form action="Booking.php" method="post" class="form-body">
+                            <div class="row form-row">
+                              <input type="text" placeholder="Enter Full name" name="name" id="name" class="form-control">
+                            </div>
+                            <div class="row form-row">
+                              <input type="text" placeholder="Enter Mobile Number" name="phone" id="phone" class="form-control">
+                            </div>
+                             <div class="row form-row">
+                              <input type="text" placeholder="Enter Email Adreess" name="email" id="email" class="form-control">
+                            </div>
+                            <div class="row form-row">
+                              <input type="time" placeholder="Enter Appointment Time" name="time" id="time" class="form-control">
+                            </div>
                             
-                            <br><br><a href="index.php" target="_blank">Make Appointment Now!</a>
-                        </div>
-                        
-                        
+                                <h6>Types of Services</h6>
+
+                                <label class="container-check"> Haircut
+                                   <input type="checkbox" value="Haircut" id="checkbox" name="service[]" checked="checked">
+                                   <span class="checkmark"></span>
+                                </label>
+                                <label class="container-check">Hair Cut & Beard
+                                    <input type="checkbox" value="Hair Cut & Beard" id="checkbox" name="service[]">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container-check">Beard Trimming
+                                    <input type="checkbox" value="Beard Trimming" id="checkbox" name="service[]">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container-check">Clean Shaving
+                                  <input type="checkbox" value="Clean Shaving" id="checkbox" name="service[]">
+                                  <span class="checkmark"></span>
+                                </label>
+                                <label class="container-check">Hair Straightening Service
+                                  <input type="checkbox" value="Hair Straightening Service" id="checkbox" name="service[]">
+                                  <span class="checkmark"></span>
+                                </label>
+
+
+                             <div class="row form-row">
+                               <button class="btn btn-success btn-appointment" name="book" value="book">Book Appointment</button>
+                            </div>
+                        </form>
                         </div>
                     </div>
                 </div>
             </div>
           </div>
       </div>
+      
+
+</div>
+
       
 </body>
 
