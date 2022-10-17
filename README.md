@@ -9,7 +9,7 @@ Besides that, customers are also able to make appointments online via the websit
 After customers make their payment, submit the form and they will receive a booking confirmation. 
 Apart from that, the website allows customers to send feedback to the salon. For instance, sending an overall rating of the salon’s services. 
 Lastly, the information of the customers will be stored in the database and salon’s staff can view them through the admin panel created. 
-
+hellooooooo
 Modules Will be Implemented
 
 - Home Page
