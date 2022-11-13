@@ -30,10 +30,10 @@ $mysqli->close();
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="style1.css" rel="stylesheet" type="text/css"/>
         <link href="service.css" rel="stylesheet" type="text/css"/>
-        <?php include 'header.html';?>
     </head>
 
   <body>
+    <?php include 'header.html';?>
     
   <br><br><p>We are more than just an ordinary salon. At Studio C Hair & Beauty Salon, you can get convenience, personalization and transformation at affordable prices. We provide you with all your hair needs under one roof. Whether you’re getting a quick trim, hair colored or a completely new look, we got you all covered here!</p>
   <div class="main-box">
