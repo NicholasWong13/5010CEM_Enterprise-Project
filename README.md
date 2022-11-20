@@ -4,7 +4,7 @@
 
 Members:
 1. Nicholas Wong
-2. John Luke
+2. John Luke Joeshua
 3. Ranveer Singh Balleh
 
 Introduction: 
