@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Contact Us</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>   
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="footer.css">
-    <!--Only for demo purpose - no need to add.-->
-    <link rel="stylesheet" href="assets/demo.css" />
-	
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+    <link rel="stylesheet" href="assets/css/style1.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    
 </head>
 <body>
-    <?php include 'header.html'?>
+    <?php include 'includes/session.php';?>
+    <?php include 'navbar.php';?>
 
-<section>
      <div class="rt-container">
+     <br /><h3>Contact Us</h3>
+     <p align="center">Get the Fresher Styles & Cuts For Your Needs along with any Beard Trimming Services Or Shaving.</p><hr></div>
           <div class="col-rt-12">
-              <div class="Scriptcontent">
-              
-            <br /><h1>Contact Us</h1>
-            <p>- Get the Fresher Styles & Cuts For Your Needs along with any Beard Trimming Services Or Shaving.</p><hr>
             <div class="container">
            <div class="contact-parent">       
             <div class="contact-child child1">
@@ -42,8 +42,14 @@
                         </p>
 
                         <p>
-                            <i class=" far fa-envelope"></i> General Support <br />
+                            <i class="far fa-envelope"></i> General Support <br />
                             <span>studiochairbeautysalon@gmail.com</span>
+                        </p>
+
+                        <p>
+                            <i class="fas fa-clock"></i> Business Hours <br />
+                            <span>Tuesday - Sunday 11AM TO 7PM</span>
+                            <span><br />Monday - Closed</span>
                         </p>
                     </div>
 
@@ -51,26 +57,18 @@
                         <div class="inside-contact">
                             <h2>Contact Form</h2>
                             <p>Fill in the form below to send us a message:</p>
-                            <form role="form" action="contact-validation.php" method="post">
+                            <form action="Send.php" method="POST" >
                                 <div class="form-group">
                                     <label class="sr-only" for="contact-name">Name</label>
-                                    <input type="text" name="name" placeholder="Name..." class="contact-name form-control" id="contact-name">
+                                    <input type="name" name="name" placeholder="Name..." class="contact-name form-control" id="contact-name">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="contact-email">Email</label>
-                                    <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
-                                </div>
-                                <div class="form-group">
-                                    <label class="sr-only" for="contact-subject">Subject</label>
-                                    <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+                                    <input type="email" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="contact-message">Message</label>
-                                    <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label for="contact-antispam">Anti-Spam Question: 7 + 5 = ?</label>
-                                    <input type="text" name="antispam" placeholder="Your answer..." class="contact-antispam form-control" id="contact-antispam">
+                                    <textarea name="msg" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
                                 </div>
                                 <input type="submit" id="btn_send" value="SEND">
                             </form>
@@ -78,22 +76,19 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <h1>Locate Us</h1><hr>
-        <div class="mapouter">
-            <div class="gmap_canvas">
-            <iframe class="gmap_iframe" frameborder="2" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Studio C Hair & Beauty Salon&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
             </div>
-    		
-           
-    		</div>
-		</div>
+            </div>
+            <br /><h3>Locate Us</h3><hr>
+            <p align="center">&nbsp;&nbsp;&nbsp;Address: <b>Jalan Sungai Dua, 11700 Gelugor, Pulau Pinang</b> </p>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Studio C Hair & Beauty Salon&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+            </div><br/>
+        </div>
     </div>
-    
-</section>
 
-    <?php include 'footer.html'?>
+    <?php include 'footer.php';?>
 
 	</body>
 </html>
